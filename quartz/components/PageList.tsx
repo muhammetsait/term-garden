@@ -25,12 +25,18 @@ export function byDateAndAlphabetical(
   }
 }
 
+export const byAlphabetical = (f1: QuartzPluginData, f2: QuartzPluginData): number => {
+  const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
+  const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
+  return f1Title.localeCompare(f2Title)
+}
+
 type Props = {
   limit?: number
 } & QuartzComponentProps
 
 export function PageList({ cfg, fileData, allFiles, limit }: Props) {
-  let list = allFiles.sort(byDateAndAlphabetical(cfg))
+  let list = allFiles.sort(byAlphabetical)
   if (limit) {
     list = list.slice(0, limit)
   }
@@ -44,11 +50,6 @@ export function PageList({ cfg, fileData, allFiles, limit }: Props) {
         return (
           <li class="section-li">
             <div class="section">
-              {page.dates && (
-                <p class="meta">
-                  <Date date={getDate(cfg, page)!} locale={cfg.locale} />
-                </p>
-              )}
               <div class="desc">
                 <h3>
                   <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">

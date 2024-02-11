@@ -1,27 +1,6 @@
 ---
-title: الفهرس
+title: الرئيسية
 ---
-[[arithmetic]]
+مرحباً بك في حديقة المصطلحات! هذه الواحة الرقمية تهدف لمشاركة بعض المعارف التي اكتسبناها في مجالات الحاسوب والتقنية والهندسة.
 
-[[communication protocol]]
-
-[[computer]]
-
-[[error detection and correction]]
-
-[[hardware]]
-
-[[logic]]
-
-[[programming language]]
-
-[[programming language theory]]
-
-[[semantics]]
-
-[[software]]
-
-[[synchronization]]
-
-[[syntax]]
-
+[[glossary|المصطلحات]]

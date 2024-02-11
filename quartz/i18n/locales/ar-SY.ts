@@ -15,7 +15,7 @@ export default {
       darkMode: "الوضع الداكن",
     },
     explorer: {
-      title: "فهرس",
+      title: "تصفح",
     },
     footer: {
       createdWith: "مبني بوساطة",
