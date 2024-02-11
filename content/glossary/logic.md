@@ -2,6 +2,9 @@
 aliases:
   - منطق
 ---
-# منطق
+# مَنْطِق
 
-# Logic
+# EN: logic
+
+# FR: logique
+
