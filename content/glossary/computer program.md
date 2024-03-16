@@ -1,4 +1,0 @@
-# برنامج حاسوبي
-
-# Computer program
-

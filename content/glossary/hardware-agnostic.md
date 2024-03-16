@@ -1,3 +1,0 @@
-# عتاد حيادي
-
-# hardware-agnostic

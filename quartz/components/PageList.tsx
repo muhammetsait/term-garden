@@ -26,9 +26,9 @@ export function byDateAndAlphabetical(
 }
 
 export const byAlphabetical = (f1: QuartzPluginData, f2: QuartzPluginData): number => {
-  const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
-  const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
-  return f1Title.localeCompare(f2Title)
+  const f1Title = f1.frontmatter?.title ?? "";
+  const f2Title = f2.frontmatter?.title ?? "";
+  return f1Title.localeCompare(f2Title, undefined, { numeric: true, sensitivity: 'base' });
 }
 
 type Props = {
