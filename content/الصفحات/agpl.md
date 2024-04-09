@@ -1,0 +1,2 @@
+Affero GPL
+
