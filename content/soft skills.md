@@ -18,3 +18,4 @@ Presentation skills
 
 Assertiveness confidence and self esteem
 Impostor syndrome
+Avoid perfectionism
