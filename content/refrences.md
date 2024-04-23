@@ -15,6 +15,8 @@ https://www.computerlanguage.com/results.php?definition=virtual
 
 https://foldoc.org/
 
+https://www.pdp-11.nl/
+
 
 
 
