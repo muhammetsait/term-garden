@@ -2,23 +2,26 @@
 aliases:
   - hdd
 ---
-
 # سواقة الأقراص الصلبة
 
 سواقة الأقراص الصلبة Hard Disc Drive&mdash;HDD هي جهاز تخزين بيانات دائم يستطيع تخزين البيانات الرقمية وقراءتها من الأقراص الصلبة Hard Disc وهي أقراص مصنوعة من مواد صلبة ومغطاة بطبقة من مادة قابلة للمغنطة الدائمة.
 
-كانت سواقات الأقراص الصلبة الوسط الدائم الرئيسي لتخزين البيانات والبرامج في [[personal computer|الحاسوب الشخصي]] منذ انخفاض أسعارها وتوفرها في متناول معظم المستخدمين في تسعينات القرن الماضي وحتى بدء انتشار صناعة سواقات الحالة الصلبة [[solid state drive|SSD]] وتزايد سعاتها التخزينية وانخفاض أسعارها، التي أصبحت الوسط التخزيني الأكثر استخداماً في الحواسيب الشخصية بدءاً من عام 2015 تقريباً.
+كانت سواقات الأقراص الصلبة الوسط الدائم الرئيسي لتخزين البيانات والبرامج في [[personal computer|الحاسوب الشخصي]] منذ انخفاض أسعارها وتوفرها في متناول معظم المستخدمين في ثمانينات وتسعينات القرن الماضي وحتى بدء انتشار صناعة سواقات الحالة الصلبة [[solid state drive|SSD]] وتزايد سعاتها التخزينية وانخفاض أسعارها، التي أصبحت الوسط التخزيني الأكثر استخداماً في الحواسيب الشخصية بدءاً من عام 2015 تقريباً.
 
-تصل السعة التخزينية للسواقات الصلبة حالياً ([[2024]]) إلى 32 [[تيرابايت]] وتتمتع بزمن [[mtbf|MTBF]] يصل إلى 2.5 مليون ساعة عمل وسرعة نقل بيانات تتراوح بين 230 وبين 285 [[ميغابت/ثا]].
+تصل السعة التخزينية للسواقات الصلبة حالياً ([[2024]]) إلى 32 [[تيرابايت]] وتتمتع بزمن [[mtbf|MTBF]] يصل إلى 2.5 مليون ساعة عمل و[[bit rate|سرعة نقل بيانات]] تتراوح بين 230 وبين 285 ميغابايت/ثا.
 
-رغم تراجع استخدام سواقات الأقراص الصلبة في الحواسيب المحمولة والمكتبية الشخصية، إلا أنها لا تزال شائعة الاستخدام في التطبيقات التي تحتاج لسعات تخزينية كبيرة، مثل مراكز البيانات أو النسخ الاحتياطي أو أنظمة كاميرات المراقبة.
+رغم تراجع استخدام سواقات الأقراص الصلبة في الحواسيب المحمولة والمكتبية الشخصية واستبدالها [[solid state drive|بسواقات الحالة الصلبة]]، إلا أنها لا تزال شائعة الاستخدام في التطبيقات التي تحتاج لسعات تخزينية كبيرة، مثل مراكز البيانات أو [[backup|النسخ الاحتياطي]] أو أنظمة كاميرات المراقبة.
+
 ## الاتصال مع الحاسوب
 
-SATA 6 Gbit/s
+يتم الربط بين سواقات الأقراص الصلبة والحاسوب عبر أحد نواقل البيانات، ومن أكثرها استخداماً:
 
-SAS (https://en.wikipedia.org/wiki/Serial_Attached_SCSI) 12 Gbit/s
+1. [[sata]] سرعة نقل البيانات القصوى 6 غ.بت/ثا. أكثر النواقل استخداماً في الحواسيب الشخصية.
+2. [[usb]] سرعة نقل البيانات القصوى تتراوح بين 5 غ.بت/ثا إلى 40 غ.بت/ثا. يستخدم هذا الناقل لتوصيل سواقات الأقراص الصلبة الخارجية أو السواقات المحمولة.
+3. [[sas]] سرعة نقل البيانات القصوى 12 غ.بت/ثا. ينتشر استخدام هذا الناقل في [[server|المخدّمات]] ومراكز البيانات.
+4. [[pata|IDE]] سرعة نقل البيانات القصوى 167 م.بايت/ثا. الناقل الأكثر استخداماً قبل تطوير SATA.
 
-IDE
+بما أن [[bit rate|سرعات نقل البيانات]] في سواقات الأقراص الصلبة حالياً لا تتجاوز 300 ميغابايت/ثا، فإن أي ناقل بيانات يوفر 2.5 غ.بت/ثا أو أكثر يوفّر حجم حزمة كافٍ لسواقة قرص صلب واحدة. لكن نواقل البيانات التي توفر معدلات أعلى مفيدة في حال توصيل عدة سواقات عبر منفذ واحد مثل توصيل عدة سواقات معاً عبر منفذ SAS أو عبر منفذ USB واحد.
 
 ## مصفوفات الأقراص
 
@@ -40,21 +43,9 @@ uses a microwave transmitter (spin torque oscillator) at the write head to gener
 [heated-dot magnetic recording](https://en.wikipedia.org/w/index.php?title=Heated-dot_magnetic_recording&action=edit&redlink=1 "Heated-dot magnetic recording (page does not exist)") (HDMR)
 bit-pattern recording, is also under development, although not expected to be available until at least 2025
 
-
-9-Disc Helium filled (16TB)
-
-Up to 20 TB of Conventional Magnetic Recording (CMR) capacity. Available in SATA models with 512e or 4Kn Advanced Format Sector Technology
-
-10-disk design for superior storage density.
-
-### Toshiba Precision Laser Welding Technology
-
-Seals helium inside the 10-disk mechanics to reduce aerodynamic drag and deliver a lower operational power profile.
-
-Buffer size
+## حجم الكاش
 
 256MiB or 512MiB
-
 
 ## حجم القطاع
 
@@ -84,7 +75,7 @@ Toshiba Persistent Write Cache Technology for Data-Loss Protection in Sudden Pow
 
 تكتب البيانات على الطبق بشكل حلقات متحدة المركز تدعى المسارات tracks، وتقسم المسارات إلى قطاعات متساوية الحجم التخزيني تدعى القطاعات sectors.
 
-### 2. المغزل spindle
+### 2. المغزل Spindle
 
 تُثبّتُ الأقراص على محور دوران واحد يدعى المِغْزَل spindle. يدور المغزل بسرعة ثابتة باستخدام محرك DC يدور عادة بسرعة 5400 [[rpm|دورة في الدقيقة]] أو 7200 دورة في الدقيقة. هناك سوّاقات بسرعات دوران أعلى مثل 10,500 دورة أو 15,000 دورة في الدقيقة لكنها أقل انتشاراً وتستخدم في الأغراض التي تتطلب أداءً أعلى.
 
@@ -114,15 +105,29 @@ Sliders are low-volume cubes/cuboids, made of **ferrite**, by which electric si
 
 The read/write [heads](https://www.webopedia.com/definitions/head/) read and write data to the platters. There is typically one head per platter side, and each head is attached to a single actuator shaft so that all the heads move in unison. When one head is over a track, all the other heads are at the same location over their respective surfaces. Typically, only one of the heads is active at a time, i.e., reading or writing data. When not in use, the heads rest on the stationary platters, but when in motion the spinning of the platters create air pressure that lifts the heads off the platters. The space between the platter and the head is so minute that even one dust particle or a fingerprint could disable the spin. This necessitates that hard drive assembly be done in a [clean room](https://www.webopedia.com/definitions/clean-room/). When the platters cease spinning the heads come to rest, or park, at a predetermined position on the heads, called the [landing zone](https://www.webopedia.com/definitions/landing-zone/).
 
-### 5. المكونات الإلكترونية
+### 5. اللوحة الإلكترونية
+
+تُثبّت [[pcb|لوحة الدارة المطبوعة PCB]] على الوجه السفلي لسواقة القرص الصلب. الوظيفة الرئيسية للوحة الإلكترونية هي تغذية الأجزاء الميكانيكية بالتيار الكهربائي والتحكم بعملها ونقل البيانات بين مجموعة القراءة والكتابة وبين الحاسوب. أهم المكوّنات الإلكترونية هي شريحة التحكم الرئيسية، شريحة قيادة المحرك، شريحة [[ROM]]، وشريحة كاش، وواجهة الاتصال. قد تحوي اللوحة أيضاً مكونات إضافية مثل عتاد مُخصّص [[encryption|لتشفير البيانات]]، أو محوّل SATA إلى USB في السوّاقات الخارجية.
+
+بعض اللوحات الإلكترونية تحوي أيضاً [[jumper|jumpers]] تستخدم لتغيير بعض الإعدادات، مثل اختيار السواقة الرئيسة والتابعة master/slave في سواقات [[pata|IDE]].
 
 ### 6. مجموعة الرأس والعلبة الخارجية Chassis
 
-تضم مجموعة الرأس والقرص head disk assemby&mdash;HDA الأطباق ورؤوس القراءة والكتابة والمغزل ومحرك المحور وهي تشكل معاً غرفة مغلقة معزولة عن الجو الخارجي. أما اللوحة الإلكترونية التي تتحكم بتلك المكونات وتدير عملية قراءة وكتابة البيانات فهي تقع خارج مجموعة الرأس.
+تضم مجموعة الرأس والقرص head disk assemby&mdash;HDA المكونات الميكانيكية وهي الأطباق ورؤوس القراءة والكتابة والمغزل ومحرك المغزل وهي تشكل معاً غرفة مغلقة معزولة عن الجو الخارجي. أما اللوحة الإلكترونية التي تتحكم بتلك المكونات وتدير عملية قراءة وكتابة البيانات فهي تقع خارج مجموعة الرأس.
 
-تجمع الدارة الإلكترونية مع مجموعة الرأس والقرص معاً في علبة حاوية لحمايتها، وتصنع سواقات الأقراص الصلبة بأبعاد قياسية من أشهرها مقاس 3.5 [[inch|بوصة]] ومقاس 2.5 بوصة.
+تجمع الدارة الإلكترونية مع مجموعة الرأس والقرص معاً في علبة حاوية، وتصنع سواقات الأقراص الصلبة بأبعاد قياسية من أشهرها مقاس 3.5 [[inch|بوصة]] ومقاس 2.5 بوصة.
 
-الحماية من الغبار
+سواقات الأقراص الصلبة الحديثة حساسة جداً بسبب دقّة حجم رأس القراءة والكتابة وكثافة البيانات العالية. إذا فُتِحت مجموعة الرأس في بيئة غير مناسبة فإن أي شوائب صغيرة أو ذرات من الغبار يمكن أن تسبب أضراراً للأطباق أو لرؤوس القراءة والكتابة. في سواقات الأقراص الأحدث ذات السعات العالية تكون حجرة مجموعة الرأس مفرغة من الهواء ومملوءة بغاز الهليوم للتقليل من أثر المقاومة الأيروديناميكية، وهذا يسمح بخفض طاقة التشغيل. تستخدم تقنيات لحام خاصة بأشعة الليزر لضمان عدم تسرب الغاز من مجموعة الرأس.
 
-غاز الهليوم
+![[/static/content/hdd-normal-vs-sealed.jpg]]
+![[/static/content/hdd-helium-sealed.jpg]]
 
+---
+
+## فيديو
+
+- [إصلاح قرص صلب 8 بوصة من الثمانينات](https://www.youtube.com/watch?v=hbc6n3Ln3bM)
+- [تصوير عمل سواقة أقراص صلبة قديمة بمحرك سيرفو](https://www.youtube.com/watch?v=GwpQrWSx8B4)
+- [تصوير عمل سواقة من التسعينات تستخدم وشيعة صوتية لتحريك الذراع](https://www.youtube.com/shorts/8tOB5K95aRg)
+- [هل يمكن استخدام سواقة القرص الصلب كمكبر صوت؟](https://youtu.be/L7GV-DgDZn4?si=2jtMyOCYaqAyEGCi&t=650)
+- [أصغر قرص صلب في العالم](https://www.youtube.com/watch?v=p7_Zlkj4u4g)

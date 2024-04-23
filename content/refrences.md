@@ -11,4 +11,10 @@ Hard Disk Drive: Mechatronics and Control, Abdullah Al Mamun, GuoXiao Guo, Chao 
 
 Net+ Sec+ A+
 
+https://www.computerlanguage.com/results.php?definition=virtual
+
+https://foldoc.org/
+
+
+
 
