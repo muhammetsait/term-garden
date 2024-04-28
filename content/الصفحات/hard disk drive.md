@@ -4,7 +4,7 @@ aliases:
 ---
 # سواقة الأقراص الصلبة
 
-سواقة الأقراص الصلبة Hard Disc Drive&mdash;HDD هي جهاز تخزين بيانات دائم يستطيع تخزين البيانات الرقمية وقراءتها من الأقراص الصلبة Hard Disc وهي أقراص مصنوعة من مواد صلبة ومغطاة بطبقة من مادة قابلة للمغنطة الدائمة.
+سواقة الأقراص الصلبة Hard Disk Drive&mdash;HDD هي جهاز تخزين بيانات دائم يستطيع تخزين البيانات الرقمية وقراءتها من الأقراص الصلبة Hard Disk وهي أقراص مصنوعة من مواد صلبة ومغطاة بطبقة من مادة قابلة للمغنطة الدائمة.
 
 كانت سواقات الأقراص الصلبة الوسط الدائم الرئيسي لتخزين البيانات والبرامج في [[personal computer|الحاسوب الشخصي]] منذ انخفاض أسعارها وتوفرها في متناول معظم المستخدمين في ثمانينات وتسعينات القرن الماضي وحتى بدء انتشار صناعة سواقات الحالة الصلبة [[solid state drive|SSD]] وتزايد سعاتها التخزينية وانخفاض أسعارها، التي أصبحت الوسط التخزيني الأكثر استخداماً في الحواسيب الشخصية بدءاً من عام 2015 تقريباً.
 
@@ -61,7 +61,7 @@ Toshiba Persistent Write Cache Technology for Data-Loss Protection in Sudden Pow
 
 ## مكونات سواقة القرص الصلب
 
-![[/static/content/hard_disk.svg|600]]
+![[/static/content/hdd-hard-disk.svg|600]]
 
 ### 1. الأطباق Platters
 
@@ -69,15 +69,13 @@ Toshiba Persistent Write Cache Technology for Data-Loss Protection in Sudden Pow
 
 تحوي سواقة الأقراص الصلبة طبقاً واحداً أو أكثر. وقد تحوي السواقات ذات السعات الكبيرة 9 أو 10 أطباق.
 
-يحتاج كل طبق إلى رأسي قراءة وكتابة للقراءة والكتابة على الوجهين العلوي والسفلي للطبق. لا تلامس رؤوس القراءة والكتابة الأطباق مباشرة، بل "تطفو" على بعد مسافة دقيقة من الأطباق بفعل قوة الطرد المركزية.
-
-يفصل بين الطبق وبين الرأس الهواء أو غاز الهليوم، كما تغطى الأطباق عادة بطبقة من [الكربون الألماسي](https://en.wikipedia.org/wiki/Diamond-like_carbon) أو [نتريد السيليكون](https://en.wikipedia.org/wiki/Silicon_nitride#:~:text=Silicon%20nitride%20is%20a%20chemical,refers%20to%20this%20specific%20composition.) أو [الكربون المهدرج](https://www.sciencedirect.com/topics/engineering/amorphous-hydrogenated-carbon) أو [PFPE](https://en.wikipedia.org/wiki/Perfluoropolyether).
+يفصل بين الطبق وبين الرأس الهواء أو غاز الهليوم، كما تغطى الأطباق عادة بطبقة حماية من [الكربون الألماسي](https://en.wikipedia.org/wiki/Diamond-like_carbon) أو [نتريد السيليكون](https://en.wikipedia.org/wiki/Silicon_nitride#:~:text=Silicon%20nitride%20is%20a%20chemical,refers%20to%20this%20specific%20composition.) أو [الكربون المهدرج](https://www.sciencedirect.com/topics/engineering/amorphous-hydrogenated-carbon) أو [PFPE](https://en.wikipedia.org/wiki/Perfluoropolyether).
 
 تكتب البيانات على الطبق بشكل حلقات متحدة المركز تدعى المسارات tracks، وتقسم المسارات إلى قطاعات متساوية الحجم التخزيني تدعى القطاعات sectors.
 
 ### 2. المغزل Spindle
 
-تُثبّتُ الأقراص على محور دوران واحد يدعى المِغْزَل spindle. يدور المغزل بسرعة ثابتة باستخدام محرك DC يدور عادة بسرعة 5400 [[rpm|دورة في الدقيقة]] أو 7200 دورة في الدقيقة. هناك سوّاقات بسرعات دوران أعلى مثل 10,500 دورة أو 15,000 دورة في الدقيقة لكنها أقل انتشاراً وتستخدم في الأغراض التي تتطلب أداءً أعلى.
+تُثبّتُ الأطباق على محور دوران واحد يدعى المِغْزَل spindle. يدور المغزل بسرعة ثابتة باستخدام محرك DC يدور عادة بسرعة 5400 [[rpm|دورة في الدقيقة]] أو 7200 دورة في الدقيقة. هناك سوّاقات بسرعات دوران أعلى مثل 10,500 دورة أو 15,000 دورة في الدقيقة لكنها أقل انتشاراً وتستخدم في الأغراض التي تتطلب أداءً أعلى.
 
 تؤثر سرعة الدوران على سرعة نقل البيانات وزمن الوصول. بشكل عام، كلما كانت سرعة الدوران أكبر كلما زادت سرعة قراءة أو كتابة البيانات. هناك عوامل أخرى تؤثر على أداء سواقة القرص الصلب، مثل حجم الكاش وكثافة البيانات و[[seek time|زمن السعي]].
 
@@ -85,25 +83,19 @@ Toshiba Persistent Write Cache Technology for Data-Loss Protection in Sudden Pow
 
 ### 3. الذراع Arm
 
-محرك الذراع actuator
+تحمل الذراع رؤوس القراءة والكتابة ويتحكم بحركتها محرك خطي يدعى المشغّل actuator. يتألف المشغل من مغناطيسين قويين يولدان حقلاً مغناطيسياً بينهما عمودي الاتجاه حتى لا يتداخل مع البيانات المخزنة على الأطباق، ووشيعة صوتية voice coil في جذر الذراع تتحرك بينهما. تتحرك الذراع مع حركة الوشيعة الصوتية حسب اختلاف قطبية التيار المارّ بها وشدّته.
 
-All the heads are attached to a single head [actuator](https://www.webopedia.com/definitions/actuator/), or actuator arm, that moves the heads around the platters. Older hard drives used a stepper motor actuator, which moved the heads based on a motor reacting to stepper pulses. Each pulse moved the actuator over the platters in predefined steps. Stepper motor actuators are not used in modern drives because they are prone to alignment problems and are highly sensitive to heat. Modern hard drives use a voice coil actuator, which controls the movement of a coil toward or away from a permanent magnet based on the amount of current flowing through it. This guidance system is called a servo.
-
-voice coils
+كانت السوّاقات القديمة تستخدم محركاً خطوياً stepper motor لتحريك الذراع، لكنها لم تعد تستخدم لعدة عيوب منها ارتفاع حرارتها مع التشغيل، وعدم دقتها في تحريك الرؤوس ومطابقتها مع المسارات تماماً.
 
 ### 4. رؤوس القراءة والكتابة Read/Write Heads
 
 ![[/static/content/hdd-arm.jpg]]
 
-Head gimbal assembly (HGA) is connected to the actuator arm front end. It consists of thin (**≈0.1mm**) pieces of sheet metal on which "**sliders**" are soldered. These sliders, are the most important part of entire head assembly, as they are responsible for performing read/write operations.
+في نهاية كل ذراع، يتم تثبيت مجموعة جمبل الرأس Head Gimbal Assembly&mdash;HGA التي تتألف من قطعة معدنية رقيقة (حوالي 0.1 مم) تُثبَّت عليها "منزلقة slider". هذه المنزلقات هي المسؤولة عن عمليات القراءة والكتابة. تصنع المنزلقة بشكل مكعب صغير الحجم من مادة الفرّيت ferrite تعمل على تحويل الطاقة الكهربائية إلى مغناطيسية تستخدم في تسجيل البيانات أو استشعار الحقول المغناطيسية وتحويلها إلى إشارة كهربائية عند قراءة البيانات.
 
-Mass of HGA is negligible, so it can hover on "**air bearing**" above/bellow platters during read/write operations. "Air bearing" is a thin layer of air, which is formed as a consequence of high RPM of the platters.
+وزن مجموعة الجمبل مهمل، ويسمح لها بالطفو على طبقة رقيقة من الهواء تتشكل بسبب سرعة دوران الأطباق تدعى بالمحمل الهوائي air bearing. يصمم سطح المنزلقة أيروديناميكياً للاستفادة من خواص المحمل الهوائي ويختلف ارتفاع انزلاق الرأس بحسب اختلاف التصميم. تناقصت المسافة الفاصلة بين رأس القراءة والكتابة وسطح القرص في السواقات الحديثة حتى أنها قد تصل إلى 3 نانومتر. عند إيقاف عمل السواقة تتحرك الرؤوس إلى "الموقف" وهو إما أن يكون قطعة خارج الأطباق تسمح للرؤوس بالتوقف جانب الحافة الخارجية للطبق أو قريباً من محور الدوران حيث لا تخزن البيانات في تلك المنطقة.
 
-Height, on which HGA of modern hard drives hovers above/bellow platters, is, depending on exact model **≈ 70nm**. It's important to point out that there is constant tendency in HDD development, to additionally decrease this dimension. If high RPM is taken into consideration, it's clear from where danger lurks...
-Sliders are low-volume cubes/cuboids, made of **ferrite**, by which electric signal is transformed into magnetic recording -writing data or vice versa, by which magnetic recording is transformed into electric signal - reading data. Slider surface is aerodynamically designed so "air bearing" features can be used in the best way. Shape of these surface is known as a "**pattern**" and it differs from model to model.
-
-
-The read/write [heads](https://www.webopedia.com/definitions/head/) read and write data to the platters. There is typically one head per platter side, and each head is attached to a single actuator shaft so that all the heads move in unison. When one head is over a track, all the other heads are at the same location over their respective surfaces. Typically, only one of the heads is active at a time, i.e., reading or writing data. When not in use, the heads rest on the stationary platters, but when in motion the spinning of the platters create air pressure that lifts the heads off the platters. The space between the platter and the head is so minute that even one dust particle or a fingerprint could disable the spin. This necessitates that hard drive assembly be done in a [clean room](https://www.webopedia.com/definitions/clean-room/). When the platters cease spinning the heads come to rest, or park, at a predetermined position on the heads, called the [landing zone](https://www.webopedia.com/definitions/landing-zone/).
+يحتاج كل طبق إلى رأسي قراءة وكتابة للقراءة والكتابة على الوجهين العلوي والسفلي للطبق. تجمع الرؤوس كلها معاً في مجموعة الذراع Head Arm Assembly&mdash;HSA بحيث تتحرك مع بعضها البعض أي أن الرؤوس تكون كلها عند رقم المسار نفسه. يعمل رأس واحد في الوقت الواحد لقراءة البيانات أو كتابتها وتكون بقية الرؤوس خاملة.
 
 ### 5. اللوحة الإلكترونية
 
@@ -126,6 +118,7 @@ The read/write [heads](https://www.webopedia.com/definitions/head/) read and w
 
 ## فيديو
 
+- [كيف تعمل سواقة القرص الصلب؟](https://www.youtube.com/watch?v=wtdnatmVdIg)
 - [إصلاح قرص صلب 8 بوصة من الثمانينات](https://www.youtube.com/watch?v=hbc6n3Ln3bM)
 - [تصوير عمل سواقة أقراص صلبة قديمة بمحرك سيرفو](https://www.youtube.com/watch?v=GwpQrWSx8B4)
 - [تصوير عمل سواقة من التسعينات تستخدم وشيعة صوتية لتحريك الذراع](https://www.youtube.com/shorts/8tOB5K95aRg)

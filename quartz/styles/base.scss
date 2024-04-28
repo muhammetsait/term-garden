@@ -150,7 +150,7 @@ a {
       width: $sidePanelWidth;
       margin-top: $topSpacing;
       box-sizing: border-box;
-      padding: 0 4rem;
+      padding: 0;
       position: fixed;
       @media all and (max-width: $fullPageWidth) {
         position: initial;
@@ -163,6 +163,7 @@ a {
 
     & .sidebar.left {
       left: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth);
+      padding-inline-start: 2rem;
       @media all and (max-width: $fullPageWidth) {
         gap: 0;
         align-items: center;
@@ -171,6 +172,7 @@ a {
 
     & .sidebar.right {
       right: calc(calc(100vw - $pageWidth) / 2 - $sidePanelWidth);
+      padding-inline-end: 2rem;
       flex-wrap: wrap;
       & > * {
         @media all and (max-width: $fullPageWidth) {

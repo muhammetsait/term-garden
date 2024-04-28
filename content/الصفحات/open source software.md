@@ -20,7 +20,7 @@
 
 صَمّم [Colin Viebrock](https://viebrock.ca/) شعار المبادرة، وهو حرف O بشكل ثقب مفتاح للدلالة على إزالة القفل عن الكود المصدري.
 
-![[/static/content/OSI_Keyhole.svg|100]]
+![[/static/content/oss-osi-logo.svg|100]]
 ## نص التعريف
 
 يمكن الاطلاع على أصل نص تعريف المصدر المفتوح على موقع المبادرة: https://opensource.org/osd

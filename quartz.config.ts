@@ -6,9 +6,9 @@ const config: QuartzConfig = {
     pageTitle: "🪴 حديقة المعلومات",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    // analytics: {
+    //   provider: "plausible",
+    // },
     locale: "ar-SY",
     baseUrl: "garden.muhammetsait.com",
     ignorePatterns: ["private", "templates", ".obsidian"],

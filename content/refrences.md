@@ -19,4 +19,5 @@ https://www.pdp-11.nl/
 
 
 
+https://www.webopedia.com/definitions/landing-zone/
 
