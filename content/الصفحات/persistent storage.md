@@ -1,6 +1,14 @@
-# التخزين الدائم
+# تخزين دائم
 
-Persistent storage is any data storage device that retains data after power to that device is shut off. It is also sometimes referred to as non-volatile storage.
+التخزين الدائم persistent storage أو التخزين غير المتطاير non-volatile storage هو تسجيل البيانات واسترجاعها باستخدام أجهزة [[storage|تخزين]] قادرة على الاحتفاظ [[data|بالبيانات]] بعد انقطاع الطاقة الكهربائية عنها.
 
-Magnetic media, such as hard disk drives and tape, are common types of persistent storage,. 
+أبرز الأمثلة على أجهزة التخزين الدائم هي أجهزة التخزين المغناطيسية [[hard disk drive|كالأقراص الصلبة]] أو [[tape|الشرائط]]، وذواكر الفلاش، والأقراص الليزرية.
 
+
+
+---
+
+## مصادر
+
+- https://en.wikipedia.org/wiki/Non-volatile_memory
+- https://en.wikipedia.org/wiki/Persistence_(computer_science)
