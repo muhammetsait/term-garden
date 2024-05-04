@@ -11,9 +11,9 @@ S3 bucket
 
 ## Create and host your blog
 
-SSG ([[Static Site Generator]])
-[[Hugo]]
-[[Obsidian]] + [[Quartz]]
+SSG ([[static site generator]])
+[[hugo]]
+[[obsidian]] + [[Quartz]]
 [[Astro]]
 [[Nextjs]]
 [[Nuxt]]

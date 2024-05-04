@@ -47,5 +47,5 @@ Although there are many different resolutions available, here is a list of the m
 - SD (Standard Definition) of 720 x 576, much of TV is still broadcast in this format
 - HD (High Definition) 1280 x 720, 4 times more detailed, clearer and better image quality
 - FHD (Full High Definition) 1920 x 1080, the higher the number of pixels, the better picture quality,
-- Quicktime (Mov) or MPEG2 or AVI using a H264 or Avid [[Codec]]
+- Quicktime (Mov) or MPEG2 or AVI using a H264 or Avid [[codec]]
 
