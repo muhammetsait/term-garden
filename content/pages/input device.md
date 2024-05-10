@@ -1,4 +1,7 @@
 
 # جهاز دخل
 
-an input device is a piece of [[hardware]] used to provide data and control signals to an information processing system, such as a [[computer]] or information appliance. Examples of input devices include keyboards, computer mice, scanners, cameras, joysticks, and microphones.
+جهاز الدخل Input Device هو مكون من [[hardware|عتاد الحاسوب]] يستخدم لإدخال [[data|البيانات]] وإشارات التحكم إلى النظام. من الأمثلة على أجهزة الدخل [[keyboard|لوحة المفاتيح]]، وأجهزة تحريك المؤشر والنقر مثل [[mouse|الفأرة]] و[[touchpad|لوحة اللمس]] و[[trackball|كرة التتبع]]، و[[scanner|الماسح الضوئي]]، و[[webcam|كاميرا الويب]]، و[[game controller|متحكم الألعاب]]، و[[microphone|الميكروفون]]، و[[wacom|ألواح الرسم]].
+
+تتصل أجهزة الدخل بالحاسوب عبر موصلات سلكية مثل [[usb]] أو لاسلكية مثل [[bluetooth]] أو usb dongle
+
