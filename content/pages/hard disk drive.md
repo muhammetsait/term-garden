@@ -27,6 +27,86 @@ aliases:
 
 RAID
 
+disk arrays (see raid ) offer high capacity and data-protecting redundancy.
+
+## كثافة البيانات
+
+تزايدت كثافة البيانات Data density في سواقات الأقراص الصلبة مع الزمن بسبب تطورات كثيرة طرأت عليها، منها استبدال محرك الرؤوس الخطوي بوشيعة صوتية ذات حركة مستمرة عالية الدقّة تسمح بتتبّع مسارات ضيقة أكثر، وتطوّر تقنيات تصنيع المواد الممغنطة حيث أصبحت أكثر قدرة على الاحتفاظ بقطبية مغناطيسية المناطق الصغيرة دون تداخل أو ضياع البيانات عند تقارب الشحنات المغناطيسية للبتّات المختلفة من بعضها.
+
+كلما ارتفعت كثافة البيانات، كلما أمكن تخزين كميات بيانات أكبر على نفس المساحة الفيزيائية المتاحة، وتقاس الكثافة بواحدة بت في البوصة المربّعة Bit per Square Inch.
+
+## تنظيم البيانات
+
+تقسم الأقراص إلى مسارات دائرية tracks وتقسم المسارات إلى قطاعات sectors. تكون القطاعات متساوية السعة التخزينية رغم أن القطاعات الأبعد عن مركز القرص تكون أطول فيزيائياً. طريقة التقسيم هذه مستخدمة أيضاً في سوّاقات الأقراص المرنة.
+
+![[/static/content/hdd-sectors.jpg]]
+
+Data is organized on the disk by dividing the tracks
+into segments called sectors. When the disk is prepared
+Parts of a typical hard disk drive. Many hard drives have multiple
+heads and platters to allow for storage of larger amounts of data.
+to receive data (a process called formatting), each sector
+is tested by writing and reading sample data. If an error
+occurs, the operating system marks the sector as unusable
+(virtually any hard disk will have at least a few such bad
+sectors).
+The set of vertical corresponding tracks on the stack of
+platters that make up the drive is called a cylinder. Since
+the drive heads are connected vertically, if a head is cur-
+rently reading or writing for example sector 89 on one
+platter, it is positioned over that same sector on all the
+others. Therefore, the operating system normally stores
+files by filling the full cylinder before going to a new sec-
+tor number.
+Another way to improve data flow is to use sector inter-
+leaving. Because many disk drives can read data faster than
+the operating system can read it from the disk’s memory
+buffer, data is often stored by skipping over adjacent sec-
+tors. Thus, instead of storing a file on sectors 1, 2, and 3,
+it might be stored on sectors 1, 3, and 5 (this is called a 2:1
+interleave). Moving the head from sector 1 to sector 3 gives
+the system enough time to process the data. (Otherwise,
+by the time the system was ready to read sector 2, the disk
+would have rotated past it and the system would have to
+wait through a complete rotation of the disk.) Newer CPUs
+are often fast enough to keep up with contiguous sectors,
+avoiding the need for interleaving.
+Data throughput tends to decrease as a hard drive is
+used. This is due to fragmentation. The operating system
+runs out of sufficient contiguous space to store new files
+and has to write new files to many sectors widely scattered
+on the disk. This means the head has to be moved more
+often, slowing data access. Using an operating system (or
+third party) defragmentation utility, users can periodically
+reorganize their hard drive so that files are again stored in
+contiguous sectors.
+Files can also be reorganized to optimize space rather
+than access time. If an operating system has a minimum
+cluster size c4K, a single file with only 32 bytes of data
+will still consume 4,096 bytes. However, if all the files are
+written together as one huge file (with an index that spec-
+ifies where each file begins) that waste of space would be
+avoided. This is the principle of disk compression. Disk
+compression does slow access somewhat (due to the need
+to look up and position to the actual data location for a
+file) and the system becomes more fragile (since garbling
+the giant file would prevent access to the data in perhaps
+thousands of originally separate files). The low cost of
+high capacity drives today has made compression less
+necessary.
+
+## حجم القطاع
+
+القطاع هو أصغر وحدة يمكن كتابتها أو قراءتها من القرص. إذا كان حجم الملف الذي سيتم تخزينه على القرص الصلب أصغر من حجم القطاع، فإن بقية القطاع تبقى غير مستخدمة.
+
+يتحدد حجم القطاع عند تصنيع السوّاقة، وتكون القطاعات كلها بحجم واحد. سابقاً كان حجم القطاع 512 بايت، لكن حديثاً أصبح حجم القطاع 4 كيلوبايت (4096 بايت) منتشراً في الأسواق. حالياً تتوفر ثلاث خيارات من ناحية حجم القطاع:
+
+1. 4 كيلوبايت (يرمز لها 4Kn)
+2. 4 كيلوبايت مع محاكاة 512 بايت (يرمز لها 512e)
+3. 512 بايت (يرمز لها 512n)
+
+بعض سواقات 4Kn تسمح للمستخدم بتفعيل وضع محاكاة 512e أو تعطيله حسب الرغبة. محاكاة 512e تسمح للسواقة بالعمل مع النظم التي لا تستطيع التعامل مع الأقراص الصلبة ذات قطاع 4 كيلوبايت، خاصة عند استخدامها للإقلاع، وقد توفر أداء أعلى في حال استخدام نظام ملفات قديم يفترض أن حجم القطاع هو 512 دائماً بدلاً من الاستعلام عنه من السوّاقة.
+
 ## تقنيات التسجيل
 
 CMR (Conventional Magnetic Recording)
@@ -47,17 +127,12 @@ bit-pattern recording, is also under development, although not expected to be av
 
 256MiB or 512MiB
 
-## حجم القطاع
-
-سابقاً كان حجم القطاع 512 بايت. لكن حديثاً أصبح حجم القطاع 4 كيلوبايت 4Kn. توفر سواقات الأقراص الصلبة الحديثة محاكاة لحجم القطاع 512 (512e).
-
-Sector length
-
-512n
-512e
-4Kn
-
-Toshiba Persistent Write Cache Technology for Data-Loss Protection in Sudden Power-Loss Events (512e models)
+Another factor in data access time and throughput is the
+use of a dedicated memory device (see cache ) to “pre-fetch”
+data likely to be needed. Windows Vista allows memory
+from some USB memory sticks (see flash drive ) to work
+as a disk cache. “Hybrid” hard drives directly integrating
+RAM and drive storage are also available.
 
 ## مكونات سواقة القرص الصلب
 
@@ -124,3 +199,13 @@ Toshiba Persistent Write Cache Technology for Data-Loss Protection in Sudden Pow
 - [تصوير عمل سواقة من التسعينات تستخدم وشيعة صوتية لتحريك الذراع](https://www.youtube.com/shorts/8tOB5K95aRg)
 - [هل يمكن استخدام سواقة القرص الصلب كمكبر صوت؟](https://youtu.be/L7GV-DgDZn4?si=2jtMyOCYaqAyEGCi&t=650)
 - [أصغر قرص صلب في العالم](https://www.youtube.com/watch?v=p7_Zlkj4u4g)
+
+---
+
+## مصادر
+
+- Encyclopedia of computer science and technology, Harry Henderson, 2008, ISBN-13: 978-0-8160-6382-6
+- Hard Disk Drive: Mechatronics and Control, Abdullah Al Mamun, GuoXiao Guo, Chao Bi, 2017
+- https://www.webopedia.com
+- https://www.wikipedia.com
+- بعض المنشورات الترويجية ومواصفات السوّاقات من شركة توشيبا وشركة Seagate
