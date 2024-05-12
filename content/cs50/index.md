@@ -1,26 +1,18 @@
 
 # مدخل إلى علوم الحاسوب CS50x
 
-## What you'll learn
+## وصف الدورة
 
-- A broad and robust understanding of computer science and programming
-- How to think algorithmically and solve programming problems efficiently
-- Concepts like abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development
-- Familiarity with a number of languages, including C, Python, SQL, and JavaScript plus CSS and HTML
-- How to engage with a vibrant community of like-minded learners from all levels of experience
-- How to develop and present a final programming project to your peers
+دورة CS50x، هي مقدمة من جامعة هارفارد إلى علوم الحاسوب وفن البرمجة لطلاب الجامعة وغيرهم ممن يملك خبرة برمجية سابقة أو لا يملكها. هي مادة بمستوى مبتدئ يدرسها David J. Malan، ويعلم الطلاب طريقة التفكير بشكل خوارزمي وحل المسائل بفعالية. تشمل مواضيع منها التجريد، الخوارزميات، بنى البيانات، التغليف، إدارة الموارد، الحماية، هندسة البرمجيات، تطوير الويب. ولغات برمجة منها C، بايثون، SQL، جافاسكربت، والتعرف على HTML وCSS. المسائل مستوحاة من مجالات حقيقية مثل البيولوجيا، التشفير، الاقتصاد، التحقيق الجنائي، والألعاب. نسخة CS50x هي نسخة أونلاين من دورة CS50 وهي أكبر دورة تدرّس في حرم جامعة هارفارد.
 
-## Course description
+الطلاب الناجحون في 9 مسائل (الوظائف برمجية) والمشروع النهائي مؤهلون للحصول على شهادة. يمكنك تعلّم هذه الدورة حسب وقتك الخاص فهي دورة تعلّم ذاتي.
 
-This is CS50x , Harvard University's introduction to the intellectual enterprises of computer science and the art of programming for majors and non-majors alike, with or without prior programming experience. An entry-level course taught by David J. Malan, CS50x teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web development. Languages include C, Python, SQL, and JavaScript plus CSS and HTML. Problem sets inspired by real-world domains of biology, cryptography, finance, forensics, and gaming. The on-campus version of CS50x , CS50, is Harvard's largest course. 
+## كيف أتعلم CS50x
 
-Students who earn a satisfactory score on 9 problem sets (i.e., programming assignments) and a final project are eligible for a certificate. This is a self-paced course–you may take CS50x on your own schedule.
+يمكنك متابعة الدورة الأصلية مجاناً عبر [موقع edX](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x) أو [صفحة الدورة على موقع هارفارد](https://cs50.harvard.edu/x/2024/)، هناك أيضاً [تسجيلات فيديو عربي](https://www.youtube.com/playlist?list=PLnrlZUDQofUv7JE4QIahAyztrQU9bnJmd) تشرح هذه المادة على يوتيوب. كما تجد في [[cs50x|قسم CS50x]] في حديقة المعلومات هنا بعض الصفحات التي تغطي أفكار الدورة بشكل مكتوب.
 
-## معلومات
+هناك عدة نسخ من هذه الدورة، منها نسخ مخففة لمن لا يعرف الكثير عن الحاسوب والبرمجة، مثل [[cs50t|CS50t]] وأيضاً CS50s التي تركز على لغة سكراتش. ونسخة مخصصة لطلاب المحاماة CS50l ونسخة لرجال الأعمال CS50b، وهناك نسخ تركز على جانب معين مثل CS50ai للذكاء الصنعي، وCS50cs للأمن الرقمي وCS50sql لقواعد البيانات وCS50w لتطوير الويب.
 
-- مستوى الصعوبة: مبتدئ
-- ساعات الدراسة: 110 - 220 ساعة (11 أسبوعاً)
-- المحاضرات: [رابط الدورة على edX](https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x)
+> [!info] ترخيص
+> كافة المواد التعليمية المأخوذة من دورة CS50x ومشتقاتها تخضع لرخصة [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ar)، للمزيد الاطلاع على [هذه الصفحة](https://cs50.harvard.edu/x/2024/license/) 
 
-
-https://pll.harvard.edu/course/cs50-introduction-computer-science
