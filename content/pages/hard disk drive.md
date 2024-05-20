@@ -208,4 +208,3 @@ RAM and drive storage are also available.
 - Hard Disk Drive: Mechatronics and Control, Abdullah Al Mamun, GuoXiao Guo, Chao Bi, 2017
 - https://www.webopedia.com
 - https://www.wikipedia.com
-- بعض المنشورات الترويجية ومواصفات السوّاقات من شركة توشيبا وشركة Seagate
