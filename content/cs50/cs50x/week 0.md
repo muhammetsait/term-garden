@@ -3,7 +3,7 @@
 
 ## المحاضرة
 
-![](https://www.youtube.com/watch?v=3LPJfIKxwWc&ab_channel=CS50)
+![](https://www.youtube.com/watch?v=3LPJfIKxwWc)
 
 ## شرح عربي
 

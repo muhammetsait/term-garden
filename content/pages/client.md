@@ -1,0 +1,7 @@
+https://en.wikipedia.org/wiki/Client_(computing)
+
+Client is a computer that gets information from another computer called server in the context of client–server model of computer networks.[1] The server is often (but not always) on another computer system, in which case the client accesses the service by way of a network.[2]
+
+A client is a computer or a program that, as part of its operation, relies on sending a request to another program or a computer hardware or software that accesses a service made available by a server (which may or may not be located on another computer).[3] For example, web browsers are clients that connect to web servers and retrieve web pages for display.[3] Email clients retrieve email from mail servers. Online chat uses a variety of clients, which vary on the chat protocol being used. Multiplayer video games or online video games may run as a client on each computer.[3] The term "client" may also be applied to computers or devices that run the client software or users that use the client software.
+
+A client is part of a client–server model, which is still used today. Clients and servers may be computer programs run on the same machine and connect via inter-process communication techniques. Combined with Internet sockets, programs may connect to a service operating on a possibly remote system through the Internet protocol suite. Servers wait for potential clients to initiate connections that they may accept.
