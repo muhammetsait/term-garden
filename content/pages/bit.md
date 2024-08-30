@@ -1,3 +1,3 @@
 # بت
 
-البت bit هو 
+البت bit هو binary digit
